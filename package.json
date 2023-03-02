@@ -1,0 +1,28 @@
+{
+  "name": "web-test",
+  "version": "1.0.0",
+  "description": "Common tetsing framework for web and unit",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "githubrepo"
+  },
+  "keywords": [
+    "ci"
+  ],
+  "author": "Modus",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "jest": "^29.4.3",
+    "playwright-chromium": "^1.31.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-typescript": "^7.21.0",
+    "babel-jest": "^29.4.3"
+  }
+}
