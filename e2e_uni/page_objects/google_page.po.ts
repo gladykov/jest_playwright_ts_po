@@ -1,4 +1,4 @@
-import BasePage from './base_page';
+import BasePage from './base_page.po';
 import {Page} from "playwright-core";
 
 export default class Search extends BasePage {

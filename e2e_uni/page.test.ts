@@ -1,4 +1,4 @@
-import Search from "./page_objects/first_page";
+import Search from "./page_objects/google_page.po";
 
 describe("Test", () => {
     let context;

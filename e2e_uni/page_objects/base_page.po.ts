@@ -17,6 +17,6 @@ export default abstract class BasePage {
     }
 
     async title() {
-        await this.page.title();
+        return await this.page.title();
     }
 }
