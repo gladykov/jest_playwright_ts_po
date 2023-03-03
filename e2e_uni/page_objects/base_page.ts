@@ -11,7 +11,12 @@ export default abstract class BasePage {
         this.page = page;
     }
 
+    // Create abstract layer, so if ever we will need to change webdriver, we will not need to update all tests
     async open() {
         await this.page.goto(`${this.BASE_URL}${this.PAGE_URL}`);
+    }
+
+    async title() {
+        await this.page.title();
     }
 }

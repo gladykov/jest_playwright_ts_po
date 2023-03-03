@@ -9,6 +9,7 @@ export default class Search extends BasePage {
 
     protected PAGE_URL = '/';
 
+    // All page objects will go here as long list
     private readonly $searchInput = 'input[name="q"]';
 
     async search() {

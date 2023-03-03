@@ -8,11 +8,14 @@ class CustomEnvironment extends NodeEnvironment {
     }
 
     async setup() {
+        this.global.bla = "blabla"
+
         this.global.browser = await chromium.launch({headless: false});
         await super.setup();
     }
 
     async teardown() {
+        console.log(this.global.bla)
         await this.global.browser.close();
         await super.teardown();
     }
